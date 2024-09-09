@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Page Title -->
+    <title>Real Estate Practice</title>
+</head>
+<body>
+    <header>
+        <!-- Banner Section -->
+        <div class="banner">
+            <!-- Banner Main (Parent is Banner) -->
+            <div class="banner-main">
+                <p class="white">✨Discover Your Dream Property with Estatein</p>
+                <a href="#" class="white">Learn More</a>
+            </div>
+            <!-- Banner Close (X) (Parent is Banner)-->
+            <div class="banner-close">
+                <img src="./assets/icons/mobile/navbar-X.svg" alt="X button to close the message.">
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <!-- Navbar Logo (Parent is navbar) -->
+            <div class="navbar-logo">
+                <img src="./assets/icons/mobile/navbar-logo.svg" alt="Estatein's Logo">
+            </div>
+            <!-- Navbar Items (Parent is navbar) -->
+            <ul class="nav-items hidden">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+            <!-- Navbar Contact Us Button (Parent is navbar) -->
+            <div class="nav-item-contact-us hidden">
+                <button>Contact Us</button>
+            </div>
+
+            <!-- Toggle This On When Working On Responsiveness (Parent is navbar) -->
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Container for the rest of the page -->
+    <div class="container">
+    <!-- Hero Section -->
+        <div class="hero">
+            <!-- Hero Section Top -->
+            <div class="hero-content-top">
+                <!-- Hero Top Section's Images -->
+                <div class="hero-top-images">
+                    <img src="assets/images/mobile/Subject.PNG" alt="" class="blend-image">
+                    <!-- NEED TO ADD ANOTHER HERE TO BLEND -->
+                </div>
+                <!-- The Top Section's Logo and Paragraph -->
+                <div class="hero-top-context">
+                    <!-- The Logo -->
+                    <div class="hero-top-context-logo">
+                        <img src="assets/images/mobile/hero-logo.svg" alt="Logo with details">
+                    </div>
+                    <p>Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
+                </div>
+            </div>
+
+            <!-- Hero Section Mid -->
+            <div class="hero-content-mid">
+                <div class="hero-mid-buttons">
+                    <button class="mid-first-button">Learn More</button>
+                    <button class="mid-second-button">Browse Properties</button>
+                </div>
+                <div class="hero-mid-stats">
+                    <div class="hero-mid-stat mid-stat-1">
+                        <span class="hero-mid-titles">200+</span>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="hero-mid-stat mid-stat-2">
+                        <span class="hero-mid-titles">10k+</span>
+                        <p>Properties For Clients</p>
+                    </div>
+                    <div class="hero-mid-stat mid-stat-3">
+                        <span class="hero-mid-titles">16+</span>
+                        <p>Years of Experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Section End -->
+            <div class="hero-content-end">
+                <div class="hero-end-items">
+                    <div class="hero-end-item hero-end-item-1">
+                        <div class="item-images">
+                            <img src="./assets/icons/mobile/hero-end-icon-1.svg" alt="Home Icon">
+                            <img src="./assets/icons/mobile/arrow-icon.svg" alt="Arrow Icon">
+                        </div>
+                        <span class="hero-end-titles">Find Your Dream Home</span>
+                    </div>
+                    <div class="hero-end-item hero-end-item-2">
+                        <div class="item-images">
+                            <img src="./assets/icons/mobile/hero-end-icon-2.svg" alt="Home Icon">
+                            <img src="./assets/icons/mobile/arrow-icon.svg" alt="Arrow Icon">
+                        </div>
+                        <span class="hero-end-titles">Unlock Property Values</span>
+                    </div>
+                    <div class="hero-end-item hero-end-item-3">
+                        <div class="item-images">
+                            <img src="./assets/icons/mobile/hero-end-icon-3.svg" alt="Home Icon">
+                            <img src="./assets/icons/mobile/arrow-icon.svg" alt="Arrow Icon">
+                        </div>
+                        <span class="hero-end-titles">Effortless Property Management</span>
+                    </div>
+                    <div class="hero-end-item hero-end-item-4">
+                        <div class="item-images">
+                            <img src="./assets/icons/mobile/hero-end-icon-4.svg" alt="Home Icon">
+                            <img src="./assets/icons/mobile/arrow-icon.svg" alt="Arrow Icon">
+                        </div>
+                        <span class="hero-end-titles">Smart Investments, Informed Decisions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Properties Section -->
+         <section class="section">
+            <div class="featured">
+                <div class="stars">
+                    <img src="./assets/icons/mobile/stars.svg" alt="Stars Icon">
+                </div>
+                <!-- Maybe put featured-title and featured-description in one, single div? -->
+                <div class="section-title">
+                    <h1>Featured Properties</h1>
+                </div>
+                <div class="section-description">
+                    <p>Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein.</p>
+                </div>
+    
+                <div class="property">
+                    <div class="property-image">
+                        <img src="./assets/images/mobile/first-property.png" alt="First Property's Image">
+                    </div>
+                    <div class="property-showcase">
+                        <!-- Property's Title -->
+                        <div class="property-title">
+                            <h3>Rustic Retreat Cottage</h3>
+                        </div>
+                        <!-- Property's Description -->
+                        <div class="property-description">
+                            <p>An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... <span id="read-more">Read More</span></p>
+                        </div>
+                        <!-- Property's Perks -->
+                        <div class="property-perks">
+                            <div class="property-perk property-perk-1">
+                                <img src="./assets/icons/mobile/perk-1.svg" alt="Bedroom Logo">
+                                <span class="perk-description">4-Bedroom</span>
+                            </div>
+                            <div class="property-perk property-perk-2">
+                                <img src="./assets/icons/mobile/perk-2.svg" alt="Bathroom Logo">
+                                <span class="perk-description">3-Bathroom</span>
+                            </div>
+                            <div class="property-perk property-perk-3">
+                                <img src="./assets/icons/mobile/perk-3.svg" alt="Villa Logo">
+                                <span class="perk-description">Villa</span>
+                            </div>
+                        </div>
+                        <!-- Property's  Details -->
+                         <div class="property-details">
+                            <div class="property-price-title-and-price">
+                                <p>Price</p>
+                                <h3 class="white">$550,000</h3>
+                            </div>
+                            <button class="property-details-btn">View Property Details</button>
+                         </div>
+                    </div>
+                </div>
+    
+                <hr>
+                <div class="show-more-properties">
+                    <div class="view-properties">
+                        <button class="all-properties-btn">View All Properties</button>
+                    </div>
+                    <div class="properties-pages">
+                        <img src="./assets/icons/mobile/left-arrow.svg" alt="Left Arrow Button">
+                        <p><span class="white">01</span> of 60</p>
+                        <img src="./assets/icons/mobile/right arrow.svg" alt="Right Arrow Button">
+                    </div>
+                </div>
+            </div>
+         </section>
+ 
+         <!-- Reviews Section -->
+         <section class="section">
+            <div class="reviews">
+                <div class="stars">
+                    <img src="./assets/icons/mobile/stars.svg" alt="Stars Icon">
+                </div>
+                <div class="section-title white">
+                    <h1>What Our Clients Say</h1>
+                </div>
+                <div class="section-description">
+                    <p>Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.</p>
+                </div>
+                <div class="review">
+                    <div class="review-image">
+                        <img src="./assets/images/mobile/5 stars.png" alt="5 Stars Rating Picture">
+                    </div>
+                    <div class="review-showcase">
+                        <!-- Property's Title -->
+                        <div class="review-title">
+                            <h3 class="white">Exceptional Service!</h3>
+                        </div>
+                        <!-- Property's Description -->
+                        <div class="review-description">
+                            <p class="white">Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!</p>
+                        </div>
+                        <!-- Property's  Details -->
+                         <div class="review-details">
+                            <div class="review-reviewers">
+                                <img src="./assets/icons/mobile/reviewer-icon.svg" alt="Reviewer's Real Life Photo">
+                                <div class="reviewers-personal-information">
+                                    <p class="white">Wade Warren</p>
+                                    <p class="white">USA, california</p>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="show-more-reviews">
+                    <div class="view-reviews">
+                        <button class="all-reviews-btn">View All Testimonials</button>
+                    </div>
+                    <div class="reviews-pages">
+                        <img src="./assets/icons/mobile/left-arrow.svg" alt="Left Arrow Button">
+                        <p><span class="white">01</span> of 10</p>
+                        <img src="./assets/icons/mobile/right arrow.svg" alt="Right Arrow Button">
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!-- F.A.Q Section -->
+          <section class="section">
+            <div class="freq-questions">
+                <div class="stars">
+                    <img src="./assets/icons/mobile/stars.svg" alt="Stars Icon">
+                </div>
+                <div class="section-title white">
+                    <h1>Frequently Asked Quesstions</h1>
+                </div>
+                <div class="section-description">
+                    <p>Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way.</p>
+                </div>
+                <div class="question">
+                    <div class="question-showcase">
+                        <!-- Question's Title -->
+                        <div class="question-title">
+                            <h3 class="white">How do I search for properties on Estatein?</h3>
+                        </div>
+                        <!-- Question's Description -->
+                        <div class="question-description">
+                            <p class="white">Learn how to use our user-friendly search tools to find properties that match your criteria.</p>
+                        </div>
+                        <div class="questions-read-more">
+                            <button class="question-read-more-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="show-more-questions">
+                    <div class="view-questions">
+                        <button class="all-questions-btn">View All FAQ's</button>
+                    </div>
+                    <div class="questions-pages">
+                        <img src="./assets/icons/mobile/left-arrow.svg" alt="Left Arrow Button">
+                        <p><span class="white">01</span> of 10</p>
+                        <img src="./assets/icons/mobile/right arrow.svg" alt="Right Arrow Button">
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!-- Explore Section (ask about CTA?) -->
+           <div class="container-explore">
+            <section class="section-explore">
+                <div class="explore-title white">
+                    <div class="explore-title-first">
+                        <h1>Start Your Real Estate</h1>
+                    </div>
+                    <div class="explore-title-second">
+                        <h1 class="explore-title-second">Journey Today</h1>
+                    </div>
+                </div>
+                <div class="explore-description">
+                    <p>Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance.</p>
+                </div>
+                <div class="explore-properties">
+                    <button class="explore-properties-btn">Explore Properties</button>
+                </div>
+               </section>
+           </div>
+        </div>
+        <footer>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="./assets/icons/mobile/navbar-logo.svg" alt="Estatein's Logo">
+                </div>
+                <div class="input-container">
+                    <div class="input-container-left">
+                        <img src="./assets/icons/mobile/left-input.svg" alt="Email Icon">
+                        <input type="text" placeholder="Enter Your Email" class="footer-input-text">
+                    </div>
+                    <div class="input-container-right">
+                        <button type="submit" class="input-container-submit-btn">
+                            <img src="./assets/icons/mobile/right-input.svg" alt="Submit">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <div class="footer-link footer-link-1">
+                        <div class="footer-link-title">
+                            <p>Home</p>
+                        </div>
+                        <div class="footer-link-links">
+                            <ul class="links-container">
+                                <li><a href="">Hero Section</a></li>
+                                <li><a href="">Features</a></li>
+                                <li><a href="">Properties</a></li>
+                                <li><a href="">Testimonials</a></li>
+                                <li><a href="">FAQ's</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-link footer-link-2">
+                        <div class="footer-link-title">
+                            <p>About Us</p>
+                        </div>
+                        <div class="footer-link-links">
+                            <ul class="links-container">
+                                <li><a href="">Our Story</a></li>
+                                <li><a href="">Our Works</a></li>
+                                <li><a href="">How It Works</a></li>
+                                <li><a href="">Our Team</a></li>
+                                <li><a href="">Our Clients</a>s</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-link footer-link-3">
+                        <div class="footer-link-title">
+                            <p>Properties</p>
+                        </div>
+                        <div class="footer-link-links">
+                            <ul class="links-container">
+                                <li><a href="">Portfolio</a></li>
+                                <li><a href="">Categories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-link footer-link-4">
+                        <div class="footer-link-title">
+                            <p>Services</p>
+                        </div>
+                        <div class="footer-link-links">
+                            <ul class="links-container">
+                                <li><a href="">Valuation Mastery</a></li>
+                                <li><a href="">Strategic Marketing</a></li>
+                                <li><a href="">Negotiation Wizardy</a></li>
+                                <li><a href="">Closing Success</a></li>
+                                <li><a href="">Property Management</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+                    <div class="footer-link footer-link-5">
+                        <div class="footer-link-title">
+                            <p>Contact Us</p>
+                        </div>
+                        <div class="footer-link-links">
+                            <ul class="links-container">
+                                <li><a href="">Contact Form</a></li>
+                                <li><a href="">Our Offices</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom-logos">
+                <div class="company-logos">
+                    <img src="./assets/icons/mobile/fb-logo.svg" alt="Facebook Logo">
+                    <img src="./assets/icons/mobile/linkedin-logo.svg" alt="Linkedin Logo">
+                    <img src="./assets/icons/mobile/twitter-logo.svg" alt="Twitter Logo">
+                    <img src="./assets/icons/mobile/youtube-logo.svg" alt="Youtube Logo">
+                </div>
+                <div class="copyright-section">
+                    <p class="copyright-first white">@2023 Estatein. All Rights Reserved.</p>
+                    <p class="copyright-second white">Terms & Conditions</p>
+            </div>
+        </footer>
+</body>
+</html>
