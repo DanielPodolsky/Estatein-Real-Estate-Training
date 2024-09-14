@@ -3,129 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleNew.css">
     <!-- Page Title -->
     <title>Real Estate Practice</title>
 </head>
 <body>
     <header>
         <!-- Banner Section -->
-        <div class="banner">
-            <!-- Banner Main (Parent is Banner) -->
-            <div class="banner-main">
-                <p class="white">✨Discover Your Dream Property with Estatein</p>
-                <a href="#" class="white">Learn More</a>
+         <section class="header-top">
+            <div class="banner">
+                <div class="banner-empty">
+                    <!-- Empty Div Trick To Get Space Around In Flexbox :) -->
+                </div>
+                <!-- Banner Main (Parent is Banner) -->
+                <div class="banner-main">
+                    <p class="white">✨Discover Your Dream Property with Estatein</p>
+                    <a href="#" class="white">Learn More</a>
+                </div>
+                <!-- Banner Close (X) (Parent is Banner)-->
+                 <div class="banner-ad">
+                    <button class="banner-close">
+                        <img src="./assets/icons/navbar-X.svg" alt="X button to close the message.">
+                    </button>
+                 </div>
             </div>
-            <!-- Banner Close (X) (Parent is Banner)-->
-            <div class="banner-close">
-                <img src="./assets/icons/mobile/navbar-X.svg" alt="X button to close the message.">
-            </div>
-        </div>
-        <!-- Navbar -->
-        <nav class="navbar">
-            <!-- Navbar Logo (Parent is navbar) -->
-            <div class="navbar-logo">
-                <img src="./assets/icons/mobile/navbar-logo.svg" alt="Estatein's Logo">
-            </div>
-            <!-- Navbar Items (Parent is navbar) -->
-            <ul class="nav-items hidden">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Properties</a></li>
-                <li><a href="#">Services</a></li>
-            </ul>
-            <!-- Navbar Contact Us Button (Parent is navbar) -->
-            <div class="nav-item-contact-us hidden">
-                <button>Contact Us</button>
-            </div>
+         </section>
+         <section class="header-bottom">
+            <!-- Navbar -->
+            <div class="navbar-container">
+                <nav class="navbar">
+                    <!-- Navbar Logo (Parent is navbar) -->
+                    <div class="navbar-logo">
+                        <img src="./assets/icons/navbar-logo.svg" alt="Estatein's Logo">
+                    </div>
+                    <!-- Navbar Items (Parent is navbar) -->
+                    <ul class="nav-items">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#hero-section">About Us</a></li>
+                        <li><a href="#properties-section">Properties</a></li>
+                        <li><a href="#services-section">Services</a></li>
+                    </ul>
+                    <!-- Navbar Contact Us Button (Parent is navbar) -->
+                    <div class="nav-item-contact-us">
+                        <button class="nav-item-contact-btn">Contact Us</button>
+                    </div>
 
-            <!-- Toggle This On When Working On Responsiveness (Parent is navbar) -->
-            <button class="hamburger" aria-label="Toggle navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-        </nav>
+                    <!-- Toggle This On When Working On Responsiveness (Parent is navbar) -->
+                    <button class="hamburger-btn" aria-label="Toggle navigation">
+                        <img src="./assets/icons/hamburger.svg" alt="Hamburger Icon">
+                    </button>
+
+                    <ul class="hamburger-clicked">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#hero-section">About Us</a></li>
+                        <li><a href="#properties-section">Properties</a></li>
+                        <li><a href="#services-section">Services</a></li>
+                    </ul>
+                </nav>
+            </div>
+         </section>
     </header>
 
     <!-- Container for the rest of the page -->
     <div class="container">
     <!-- Hero Section -->
-        <div class="hero">
-            <!-- Hero Section Top -->
-            <div class="hero-content-top">
-                <!-- Hero Top Section's Images -->
-                <div class="hero-top-images">
-                    <img src="assets/images/mobile/Subject.PNG" alt="" class="blend-image">
-                    <!-- NEED TO ADD ANOTHER HERE TO BLEND -->
-                </div>
-                <!-- The Top Section's Logo and Paragraph -->
-                <div class="hero-top-context">
-                    <!-- The Logo -->
-                    <div class="hero-top-context-logo">
-                        <img src="assets/images/mobile/hero-logo.svg" alt="Logo with details">
+        <div class="hero" id="hero-section">
+            <div class="hero-main">
+                 <div class="hero-main-left">
+                    <div class="hero-main-left-container">
+                        <div class="hero-content-top">
+                            <!-- Hero Top Section's Images -->
+                            <!-- The Top Section's Logo and Paragraph -->
+                            <div class="hero-top-context">
+                                <!-- The Logo -->
+                                <div class="hero-top-context-logo">
+                                    <img src="assets/images/hero-logo.svg" alt="Logo with details">
+                                </div>
+                                <div class="hero-top-title">
+                                    <p>Discover Your Dream</p>
+                                    <p>Property With Estatein</p>
+                                </div>
+                                <div class="hero-top-paragraph">
+                                    <p>Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero Section Mid -->
+                        <div class="hero-content-mid">
+                            <div class="hero-mid-buttons">
+                                <button class="mid-first-button">Learn More</button>
+                                <button class="mid-second-button">Browse Properties</button>
+                            </div>
+                            <div class="hero-mid-stats">
+                                    <div class="hero-mid-stat mid-stat-1">
+                                        <span class="hero-mid-titles">200+</span>
+                                        <p>Happy Customers</p>
+                                    </div>
+                                    <div class="hero-mid-stat mid-stat-2">
+                                        <span class="hero-mid-titles">10k+</span>
+                                        <p>Properties For Clients</p>
+                                    </div>
+                                    <div class="hero-mid-stat mid-stat-3">
+                                        <span class="hero-mid-titles">16+</span>
+                                        <p>Years of Experience</p>
+                                    </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
+                </div>
+
+
+
+                <!-- Hero Section Top -->
+                <div class="hero-main-right">
+                    <div class="hero-top-images">
+                        <img src="assets/images/hero-background-large.png" alt="Background Image" class="blend-image">
+                        <!-- NEED TO ADD ANOTHER HERE TO BLEND -->
+                    </div>
                 </div>
             </div>
-
-            <!-- Hero Section Mid -->
-            <div class="hero-content-mid">
-                <div class="hero-mid-buttons">
-                    <button class="mid-first-button">Learn More</button>
-                    <button class="mid-second-button">Browse Properties</button>
-                </div>
-                <div class="hero-mid-stats">
-                    <div class="hero-mid-stat mid-stat-1">
-                        <span class="hero-mid-titles">200+</span>
-                        <p>Happy Customers</p>
-                    </div>
-                    <div class="hero-mid-stat mid-stat-2">
-                        <span class="hero-mid-titles">10k+</span>
-                        <p>Properties For Clients</p>
-                    </div>
-                    <div class="hero-mid-stat mid-stat-3">
-                        <span class="hero-mid-titles">16+</span>
-                        <p>Years of Experience</p>
-                    </div>
-                </div>
-            </div>
-
+            
             <!-- Hero Section End -->
             <div class="hero-content-end">
                 <div class="hero-end-items">
                     <div class="hero-end-item hero-end-item-1">
-                        <div class="item-images">
-                            <img src="./assets/icons/mobile/hero-end-icon-1.svg" alt="Home Icon">
-                            <img src="./assets/icons/mobile/arrow-icon.svg" alt="Arrow Icon">
+                        <img src="./assets/icons/arrow-icon.svg" alt="Arrow Icon">
+                        <div class="item-container">
+                            <div class="item-images">
+                                <img src="./assets/icons/hero-end-icon-1.svg" alt="Home Icon">
+                            </div>
+                            <span class="hero-end-titles">Find Your Dream Home</span>
                         </div>
-                        <span class="hero-end-titles">Find Your Dream Home</span>
                     </div>
                     <div class="hero-end-item hero-end-item-2">
-                        <div class="item-images">
-                            <img src="./assets/icons/mobile/hero-end-icon-2.svg" alt="Home Icon">
-                            <img src="./assets/icons/mobile/arrow-icon.svg" alt="Arrow Icon">
+                        <img src="./assets/icons/arrow-icon.svg" alt="Arrow Icon">
+                        <div class="item-container">
+                            <div class="item-images">
+                                <img src="./assets/icons/hero-end-icon-2.svg" alt="Home Icon">
+                            </div>
+                            <span class="hero-end-titles">Unlock Property Value</span>
                         </div>
-                        <span class="hero-end-titles">Unlock Property Values</span>
                     </div>
                     <div class="hero-end-item hero-end-item-3">
-                        <div class="item-images">
-                            <img src="./assets/icons/mobile/hero-end-icon-3.svg" alt="Home Icon">
-                            <img src="./assets/icons/mobile/arrow-icon.svg" alt="Arrow Icon">
+                        <img src="./assets/icons/arrow-icon.svg" alt="Arrow Icon">
+                        <div class="item-container">
+                            <div class="item-images">
+                                <img src="./assets/icons/hero-end-icon-3.svg" alt="Home Icon">
+                            </div>
+                            <span class="hero-end-titles">Effortless Property Management</span>
                         </div>
-                        <span class="hero-end-titles">Effortless Property Management</span>
                     </div>
                     <div class="hero-end-item hero-end-item-4">
-                        <div class="item-images">
-                            <img src="./assets/icons/mobile/hero-end-icon-4.svg" alt="Home Icon">
-                            <img src="./assets/icons/mobile/arrow-icon.svg" alt="Arrow Icon">
+                        <img src="./assets/icons/arrow-icon.svg" alt="Arrow Icon">
+                        <div class="item-container">
+                            <div class="item-images">
+                                <img src="./assets/icons/hero-end-icon-4.svg" alt="Home Icon">
+                            </div>
+                            <span class="hero-end-titles">Smart Investments, Informed Decisions</span>
                         </div>
-                        <span class="hero-end-titles">Smart Investments, Informed Decisions</span>
                     </div>
                 </div>
             </div>
@@ -133,7 +175,7 @@
 
         <!-- Featured Properties Section -->
          <section class="section">
-            <div class="featured">
+            <div class="featured" id="properties-section">
                 <div class="stars">
                     <img src="./assets/icons/mobile/stars.svg" alt="Stars Icon">
                 </div>
@@ -200,7 +242,7 @@
  
          <!-- Reviews Section -->
          <section class="section">
-            <div class="reviews">
+            <div class="reviews" id="services-section">
                 <div class="stars">
                     <img src="./assets/icons/mobile/stars.svg" alt="Stars Icon">
                 </div>
@@ -312,6 +354,8 @@
                </section>
            </div>
         </div>
+
+        <!-- Footer Section -->
         <footer>
             <div class="footer-top">
                 <div class="footer-logo">
@@ -419,5 +463,6 @@
                     <p class="copyright-second white">Terms & Conditions</p>
             </div>
         </footer>
+    <script src="./app.js" defer></script> 
 </body>
 </html>

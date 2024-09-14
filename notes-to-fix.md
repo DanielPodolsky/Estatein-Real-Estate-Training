@@ -1,6 +1,6 @@
 NOTES:
 
-# Currently I am working on the mobile first version #
+# Currently I am working on the hero section #
 
 Next thing to do:
 ## Mobile ##
@@ -17,7 +17,18 @@ To fix:
 7. hero-mid doesnt start from the sides. (its centered instead of space between?)
 8. Change property to display: flex to maintain vertical alignment.
 9. Change every "Review" to "Testimonials" in code.
+10. Have a specific button class...
+11. Make the ul at the footer look like we want (Like in figma)
+
+
+*NEW* To Fix:
+1. Border-bottom of header-top to remove it after user clicks the X button.
 
 
 
 Completed:
+
+Problems I had and the answers to them!
+
+1. Background image for the site; Don't put them in the CSS Reset. Instead, put the background image in the body.
+2. Not a problem, but good video for hamburger :) https://www.youtube.com/watch?v=U8smiWQ8Seg (Coding2Go)

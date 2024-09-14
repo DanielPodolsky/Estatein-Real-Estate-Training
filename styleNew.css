@@ -1,0 +1,586 @@
+/* Normalize CSS */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+/* Variables */
+:root {
+    --border: #545454;
+    --main-background: #1e1e1e;
+    --hero-background: #141414;
+    --hero-background-2: #14141419;
+    --white-color: #fff;
+    --width-banner: 95%;
+    --width-main: 90%;
+    --gap-banner: 15px;
+    --gap-navbar: 25px;
+    --padding-mid: 5px;
+    --padding-large: 15px;
+    --background-btn-purple: #703BF7;
+}
+
+/* Global CSS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--hero-background);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+p {
+    color: var(--paragraph);
+}
+
+.white {
+    color: var(--white-color);
+}
+
+.gray {
+    color: var(--border);
+}
+
+.hidden {
+    display: none !important;
+}
+
+button {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--hero-background);
+    color: var(--white-color);
+    padding: var(--padding-large);
+}
+
+
+.hamburger-btn {
+    display: none;
+}
+
+.hamburger-clicked {
+    display: none;
+}
+
+
+/* Header, Banner and Nav */
+
+header {
+    border: 2px solid black;
+}
+
+.header-top {
+    background-image: url('./assets/images/above-navbar-banner.png');
+    background-size: cover;  /* This ensures the image covers the entire element */
+    background-position: center;  /* This centers the background image */
+    background-repeat: no-repeat;
+    border-bottom: 1px solid var(--border);
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-large);
+    /* width, margin must come together! (otherwise its just broken) */
+    width: var(--width-banner);
+    margin: 0 auto;
+    background: none;
+}
+
+.banner-empty {
+    width: 55px;
+}
+
+.banner-main {
+    display: flex;
+    gap: var(--gap-banner);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.banner-close {
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bottom {
+    background-color: var(--main-background);
+}
+
+
+.navbar-container {
+    width: var(--width-main);
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-large);
+}
+
+.nav-items {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: var(--gap-navbar);
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: var(--white-color);
+    cursor:pointer;
+    position:relative;
+    padding:10px 20px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    transition:all 1s;
+    &:after,&:before {
+    content:" ";
+    width:10px;
+    height:10px;
+    position:absolute;
+    border :0px solid var(--hero-background);
+    transition:all 1s;
+    }
+    &:after{
+        top:-1px;
+        left:-1px;
+        border-top:5px solid var(--hero-background);
+        border-left:5px solid var(--hero-background);
+    }
+    &:before{
+        bottom:-1px;
+        right:-1px;
+        border-bottom:5px solid var(--hero-background);
+        border-right:5px solid var(--hero-background);
+    }
+    &:hover{
+        border-top-right-radius:0px;
+        border-bottom-left-radius:0px;
+        background:rgba(0,0,0,1);
+        &:before,&:after{
+        width:100%;
+        height:100%;
+        border-color: var(--hero-background);
+        }
+    }
+}
+
+.nav-items li a:hover {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--hero-background);
+    color: var(--white-color);
+    padding: var(--padding-large);
+}
+
+
+/* Hero Section */
+
+.hero {
+}
+
+.hero-main {
+    display: flex;
+    position: relative;
+}
+
+.hero-top-context-logo {
+    position: absolute;
+    right: -45px;
+}
+
+.hero-main-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-main-right {
+    width: 50%;
+    background-color: rgba(39, 38, 38, 0.232);
+}
+
+.hero-main-left-container {
+    padding: var(--padding-large);
+    position: relative;
+    left: 70px;
+    width: 91.5%;
+}
+
+.hero-top-title {
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.hero-top-paragraph {
+    color: var(--border);
+    margin-bottom: 30px;
+    font-size: 0.9063rem;
+}
+
+.hero-mid-buttons {
+    display: flex;
+    gap: var(--gap-banner);
+}
+
+.mid-second-button {
+    background-color: var(--background-btn-purple);
+}
+
+.hero-mid-stats {
+    display: flex;
+    gap: var(--gap-navbar);
+    margin-top: 30px;
+}
+
+
+.hero-mid-stat {
+    padding: var(--padding-large);
+    background-color: var(--main-background);
+    border-radius: 10px;
+    border: 1px solid #313030;
+}
+
+.hero-mid-stat p {
+    color: var(--border);
+    margin-top: 15px;
+}
+
+.hero-mid-stat-container {
+
+}
+.hero-mid-titles {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero-content-end {
+    margin: 0 10px;
+    margin-bottom: 25px;
+}
+.hero-end-items {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.hero-end-item {
+    height: 150px;
+    width: 25%;
+    background-color: var(--main-background);
+    border-radius: 10px;
+    padding: var(--padding-large);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-end-titles {
+    color: var(--white-color);
+}
+
+.item-images {
+    position: relative;
+    text-align: center;
+}
+
+.hero-end-item img[src="./assets/icons/arrow-icon.svg"] {
+    /* ניתקתי את התמונה של החץ מהזרימה ובגלל שהוא יחסי כרגע לאבא שלו שזה בעצם  הדיב הראשון אז מיקמתי אותו ימין למעלה */
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: var(--padding-large)
+}
+
+
+/* Media Queries */
+
+/* Laptops, Tablets, etc */
+@media only screen and (max-width: 1200px) {
+    /* Make the banner's font a little bit smaller */
+    .banner {
+        padding: var(--padding-mobile);
+    }
+    .banner-main {
+        font-size: 0.8125rem;
+    }
+    /* Make the button a little bit smaller aswell */
+    .banner-close img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .navbar {
+        padding: var(--padding-mid);
+    }
+
+    .nav-items li a {
+        font-size: 0.7188rem;
+    }
+
+    .nav-item-contact-btn {
+        padding: var(--padding-mid);
+        cursor: pointer;
+        transition: all 1s;
+    }
+
+    .nav-item-contact-btn:hover {
+        color: var(--hero-background);
+        background-color: var(--border);
+    }
+
+    .nav-items li a:hover {
+        padding: var(--padding-mid);
+    }
+
+
+
+    /* Hero Section */
+    .hero-top-context-logo {
+        right: -60px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .hero-main-left-container {
+        padding: var(--padding-mid);
+        left: 45px;
+        width: 100%;
+    }
+
+    .hero-top-title {
+        font-size: 2.3rem;
+        font-weight: 500;
+    }
+
+    .hero-top-paragraph {
+        font-size: 0.8rem;
+        max-width: 80%;
+    }
+
+    .hero-mid-stats {
+        width: 80%;
+    }
+
+    .hero-mid-stat p {
+        color: var(--border);
+        margin-top: 15px;
+        font-size: 0.8rem;
+    }
+
+    .hero-mid-titles {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+}
+
+/* Phones, etc */
+@media only screen and (max-width: 768px) {
+    /* Remove the empty div and make space-between with the other two */
+    .banner-empty {
+        display: none;
+    }
+
+    .banner-main {
+        font-size: 0.6875rem;
+    }
+
+    .nav-items, .nav-item-contact-us {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: block;
+    }
+    
+    .navbar-container {
+        width: var(--width-banner);
+    }
+
+    .hamburger-btn {
+        border: none;
+        background: none;
+    }
+
+    .hamburger-clicked {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100vh; /* Full height of the screen */
+        width: 100vh;
+        z-index: 999; /* To make sure this is in-front of everything */
+        background-color: #14141419;
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0,0,0,1);
+        flex-direction: column;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        gap: var(--gap-navbar);
+    }
+
+    .hamburger-clicked li a {
+        text-decoration: none;
+        color: var(--white-color);
+        width: 100%;
+    }
+
+    /* Hero Section */
+
+    .hero-main {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .hero-main-right {
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+
+    .hero-main-left {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .hero-top-context {
+        position: relative;
+    }
+
+
+    .hero-top-context-logo {
+        position: absolute;
+        top: -105px;
+        left: -15px;
+    }
+
+    .hero-main-left-container {
+        padding: var(--padding-mid);
+        margin-top: 50px;
+        left: 0;
+    }
+
+    .hero-top-title {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .mid-first-button {
+        width: 100%;
+    }
+
+    .mid-second-button {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .hero-mid-stats {
+        text-align: center;
+        padding: 25px;
+        /* Grid Setup */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        gap: 10px;
+        font-size: 0.875rem;
+        width: 100%;
+    }
+
+    .hero-mid-stat {
+        background-color: var(--main-background);
+        border: 1px solid var(--border);
+        border-radius: 15px;;
+        padding: 15px;
+    }
+    
+    .hero-mid-buttons {
+        display: block;
+        gap: var(--gap-banner);
+    }
+    /* Hero Mid Stats */
+    
+    .mid-stat-1 {
+    /*  grid-column: 1 / 2;
+        grid-row: 1 / 2;    */
+    
+        grid-area: 1 / 1 / 2 / 2; /* start-row / start-column / finish-row / finish-column */
+    }
+    
+    .mid-stat-2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    .mid-stat-3 {
+        grid-area: 2 / 1 / 3 / 3; 
+    }
+    
+    .hero-mid-titles {
+        color: var(--white-color);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .hero-content-end {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    
+    .hero-end-titles {
+        color: var(--white-color);
+    }
+    
+    .hero-end-items {
+        border: 1px solid var(--border);
+        border-radius: 15px;
+        box-shadow: rgba(0,0,0,0.25) 0px 25px 50px -12px;
+        /* Grid Setup */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        padding: 25px;
+        font-size: 0.875rem;
+        margin-bottom: 16px;
+    }
+    
+    .hero-end-item {
+        background-color: var(--main-background);
+        border: 1px solid var(--border);
+        border-radius: 15px;
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
