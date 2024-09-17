@@ -103,12 +103,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--padding-large);
+    padding: var(--padding-mid) 100px;
     /* width, margin must come together! (otherwise its just broken) */
-    width: var(--width-banner);
-    margin: 0 auto;
     background: none;
 }
+
 
 .banner-empty {
     width: 55px;
@@ -127,6 +126,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
 }
 
 .header-bottom {
