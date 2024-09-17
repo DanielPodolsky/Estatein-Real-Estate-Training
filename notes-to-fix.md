@@ -32,3 +32,4 @@ Problems I had and the answers to them!
 
 1. Background image for the site; Don't put them in the CSS Reset. Instead, put the background image in the body.
 2. Not a problem, but good video for hamburger :) https://www.youtube.com/watch?v=U8smiWQ8Seg (Coding2Go)
+3. align-items: stretch; Makes the flex items have the height of the tallest flex item so they all align together nicely.

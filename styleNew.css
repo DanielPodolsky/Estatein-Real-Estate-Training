@@ -43,9 +43,6 @@ img {
     object-fit: cover;
 }
 
-p {
-    color: var(--paragraph);
-}
 
 .white {
     color: var(--white-color);
@@ -76,6 +73,18 @@ button {
     display: none;
 }
 
+.read-more-paragraph {
+    display: none;
+}
+
+.read-more, .read-less {
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.read-less {
+    display: none;
+}
 
 /* Header, Banner and Nav */
 
@@ -126,15 +135,14 @@ header {
 
 
 .navbar-container {
-    width: var(--width-main);
-    margin: 0 auto;
+    padding: var(--padding-mid) 100px;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--padding-large);
+    padding: 15px 0;
 }
 
 .nav-items {
@@ -196,9 +204,6 @@ header {
 
 /* Hero Section */
 
-.hero {
-}
-
 .hero-main {
     display: flex;
     position: relative;
@@ -206,7 +211,10 @@ header {
 
 .hero-top-context-logo {
     position: absolute;
-    right: -45px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 123px));
+    
 }
 
 .hero-main-left {
@@ -221,10 +229,8 @@ header {
 }
 
 .hero-main-left-container {
-    padding: var(--padding-large);
+    padding: 100px;
     position: relative;
-    left: 70px;
-    width: 91.5%;
 }
 
 .hero-top-title {
@@ -316,6 +322,152 @@ header {
     padding: var(--padding-large)
 }
 
+/* Properties Section */
+.section {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 64px;
+}
+.section-title {
+    color: var(--white-color);
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    color: var(--border);
+    margin-bottom: 48px;
+}
+
+.property-showcase h3 {
+    color: var(--white-color);
+}
+
+.property-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.property-description {
+    color: var(--border);
+    margin-bottom: 10px;
+}
+
+.property-perks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+#read-more {
+    text-decoration: underline;
+    background-color: var(--hero-background);
+    color: var(--white-color);
+}
+
+.property-perk {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: 45px;
+    padding: 10px;
+    background-color: var(--main-background);
+}
+
+.property {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 35px;
+}
+
+.perk-description {
+    color: var(--white-color);
+}
+
+.property-deals-btn {
+    background-color: #703BF7;
+    padding: 15px 35px;
+    width: 100%;
+}
+
+.property-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.property-deals-btn-container {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.properties {
+    display: flex;
+    gap: var(--gap-banner);
+    align-items: stretch;
+    justify-content: center;
+}
+
+.property-image img {
+    width: 100%;
+}
+
+.property-pnd {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+hr {
+    margin-bottom: 16px;
+    margin-top: 32px;
+}
+
+.all-properties-btn {
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    background-color: var(--main-background);
+    padding: 15px 15px;
+}
+
+.properties-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--border);
+}
+
+.show-more-properties {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.property-pnd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.property-prices-title {
+    color: var(--border);
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.property-actual-price {
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+
+.properties-pages img {
+    cursor: pointer;
+}
 
 /* Media Queries */
 
@@ -323,7 +475,7 @@ header {
 @media only screen and (max-width: 1200px) {
     /* Make the banner's font a little bit smaller */
     .banner {
-        padding: var(--padding-mobile);
+        padding: 10px 35px;
     }
     .banner-main {
         font-size: 0.8125rem;
@@ -334,8 +486,8 @@ header {
         height: 20px;
     }
 
-    .navbar {
-        padding: var(--padding-mid);
+    .navbar-container {
+        padding: 10px 35px;
     }
 
     .nav-items li a {
@@ -343,7 +495,7 @@ header {
     }
 
     .nav-item-contact-btn {
-        padding: var(--padding-mid);
+        padding: 10px 25px;
         cursor: pointer;
         transition: all 1s;
     }
@@ -361,15 +513,15 @@ header {
 
     /* Hero Section */
     .hero-top-context-logo {
-        right: -60px;
+        right: 0px;
         width: 100px;
         height: 100px;
     }
 
     .hero-main-left-container {
-        padding: var(--padding-mid);
-        left: 45px;
+        padding: 50px;
         width: 100%;
+        padding: 10px 35px;
     }
 
     .hero-top-title {
@@ -396,6 +548,27 @@ header {
         color: rgba(255, 255, 255, 0.85);
         font-size: 1.2rem;
         font-weight: bold;
+    }
+
+    /* Properties Section */
+    .property-description {
+        font-size: 0.875rem;
+    }
+
+    .property-prices-title {
+        font-size: 0.875rem;
+    }
+    
+    .property-actual-price {
+        font-size: 0.875rem;
+    }
+
+    .property-perk {
+        font-size: 0.875rem;
+    }
+
+    .property-deals-btn {
+        padding: 10px 10px;
     }
 
 }
@@ -580,6 +753,32 @@ header {
         padding: 15px;
         text-align: center;
         width: 100%;
+    }
+
+    /* Properties Section */
+    .property-1, .property-2 {
+        display: none;
+    }
+
+    .property-description {
+        font-size: 1rem;
+    }
+
+    .property-prices-title {
+        font-size: 1rem;
+    }
+    
+    .property-actual-price {
+        font-size: 1rem;
+    }
+
+    .property-perk {
+        font-size: 1rem;
+    }
+
+    .property-deals-btn {
+        font-size: 1rem;
+        padding: 15px 35px;
     }
 
 }

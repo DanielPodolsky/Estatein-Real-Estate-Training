@@ -368,13 +368,6 @@ hr {
     color: var(--border);
 }
 
-.all-properties-btn {
-    border: 1px solid var(--border);
-    border-radius: 15px;
-    background-color: var(--main-background);
-    padding: 15px 15px;
-}
-
 .properties-pages {
     display: flex;
     justify-content: center;
