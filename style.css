@@ -64,7 +64,7 @@ img {
     transition: all 0.3s ease-in-out;
 }
 
-/* The smallest font-size */
+
 /* This is the container for banner-main and banner-close */
 .banner {
     display: flex;
@@ -479,7 +479,7 @@ hr {
 /* --------------------------------- END OF FAQ SECTION --------------------------------- */
 /* --------------------------------- START OF EXPLORE SECTION --------------------------------- */
 .container-explore {
-    background-image: url("./assets/images/mobile/explore-background.png");
+    background-image: url("./assets/images/explore-background.png");
     background-size: cover;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);

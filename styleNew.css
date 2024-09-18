@@ -22,6 +22,7 @@
     --padding-mid: 5px;
     --padding-large: 15px;
     --background-btn-purple: #703BF7;
+    --light-gray: #999;
 }
 
 /* Global CSS */
@@ -131,11 +132,18 @@ header {
 
 .header-bottom {
     background-color: var(--main-background);
+    position: relative;
+}
+
+.container {
+    position: relative;
+    top: 45px;
 }
 
 
 .navbar-container {
     padding: var(--padding-mid) 100px;
+    max-width: auto;
 }
 
 .navbar {
@@ -241,7 +249,7 @@ header {
 }
 
 .hero-top-paragraph {
-    color: var(--border);
+    color: var(--light-gray);
     margin-bottom: 30px;
     font-size: 0.9063rem;
 }
@@ -270,7 +278,7 @@ header {
 }
 
 .hero-mid-stat p {
-    color: var(--border);
+    color: var(--light-gray);
     margin-top: 15px;
 }
 
@@ -291,6 +299,7 @@ header {
     display: flex;
     gap: 10px;
     margin-top: 25px;
+    text-align: center;
 }
 
 .hero-end-item {
@@ -335,7 +344,7 @@ header {
 }
 
 .section-description {
-    color: var(--border);
+    color: var(--light-gray);
     margin-bottom: 48px;
 }
 
@@ -422,6 +431,7 @@ header {
     display: flex;
     gap: 15px;
 }
+
 hr {
     margin-bottom: 16px;
     margin-top: 32px;
@@ -469,10 +479,279 @@ hr {
     cursor: pointer;
 }
 
+.review {
+    border: 1px solid var(--border);
+    padding: 35px;
+    border-radius: 15px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.review-image {
+    margin-bottom: 16px;
+}
+
+.review-title {
+    margin-bottom: 8px;
+}
+
+.review-description { 
+    margin-bottom: 16px;
+}
+.review-reviewers {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.all-reviews-btn {
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    background-color: var(--main-background);
+    padding: 15px 15px;
+}
+
+.reviews-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.show-more-reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviews {
+    display: flex;
+    gap: 25px;
+}
+
+.freq-questions {
+    display: flex;
+    gap: 25px;
+}
+.question {
+    border: 1px solid var(--border);
+    padding: 35px;
+    border-radius: 15px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.question-title {
+    margin-bottom: 32px;
+}
+
+.question-description { 
+    margin-bottom: 16px;
+}
+
+.question-read-more-btn {
+    border: 1px solid var(--border);
+    background-color: var(--main-background);
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.show-more-questions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.questions-pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.all-questions-btn {
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    background-color: var(--main-background);
+    padding: 15px 15px;
+}
+
+.container-explore {
+    background-image: url("./assets/images/explore-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.explore-title h1{
+    display: inline;
+}
+
+.explore-title {
+    margin-bottom: 10px;
+}
+
+.explore-title-first {
+    display: inline;
+    margin-bottom: 16px;
+}
+
+.explore-title-second {
+    display: inline;
+    margin-bottom: 10px;
+}
+
+.explore-description {
+    margin-bottom: 16px;
+    color: var(--light-gray);
+}
+
+.explore-properties-btn {
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    background-color: var(--main-background);
+    padding: 15px 15px;
+    width: 100%;
+    background-color: #703BF7;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.explore-properties {
+    width: 150px;
+}
+
+.section-explore {
+    padding-top: 25px;
+    margin-top: 25px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+
+
+footer {
+    background-color: var(--hero-background);
+    padding-top: 25px;
+    margin: 0 auto;
+    padding-top: 24px;
+    position: relative;
+    top: 80px;
+    color: var(--light-gray);
+    width: 100%;
+}
+
+.footer-headline {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.footer-input-text {
+    width: 100%;
+    background-color: var(--hero-background);
+    color: inherit;
+    border: none;
+}
+
+.input-container {
+    border: 1px solid var(--border);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 10px;
+    width: 250px;
+}
+
+.input-container-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-container-submit-btn {
+    background: none;
+    border: none;
+}
+
+.footer-links {
+    display: flex;
+    gap: 35px;
+    justify-content: flex-end;
+    width: 100%;
+}
+.footer-link {
+    width: 100px;
+}
+.footer-link-title {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.footer-link-links {
+    font-size: 0.875rem;
+}
+
+
+.links-container {
+    width: 100%;
+}
+
+ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    width: 150px;
+}
+
+ul li{
+    margin-bottom: 10px;
+    list-style-type: none;
+    width: 150px;
+}
+
+.footer-bottom {
+}
+.footer-bottom-logos {
+    margin-top: 24px;
+    background-color: var(--main-background);
+    text-align: center;
+    padding: 24px;
+}
+
+.copyright-section {
+    margin-top: 24px;
+}
+
+.copyright-first {
+    margin-bottom: 24px;
+}
+
+.stars {
+    z-index: 999;
+}
+
 /* Media Queries */
 
 /* Laptops, Tablets, etc */
 @media only screen and (max-width: 1200px) {
+    .container {
+        top: 30px;
+    }
     /* Make the banner's font a little bit smaller */
     .banner {
         padding: 10px 35px;
@@ -487,7 +766,7 @@ hr {
     }
 
     .navbar-container {
-        padding: 10px 35px;
+        padding: 5px 15px;
     }
 
     .nav-items li a {
@@ -574,7 +853,8 @@ hr {
 }
 
 /* Phones, etc */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
+
     /* Remove the empty div and make space-between with the other two */
     .banner-empty {
         display: none;
@@ -594,6 +874,7 @@ hr {
     
     .navbar-container {
         width: var(--width-banner);
+        margin: 0 auto;
     }
 
     .hamburger-btn {
@@ -631,6 +912,7 @@ hr {
     .hero-main {
         flex-direction: column-reverse;
         flex-wrap: wrap;
+        position: relative;
     }
 
     .hero-main-right {
@@ -653,6 +935,7 @@ hr {
         position: absolute;
         top: -105px;
         left: -15px;
+        z-index: 999;
     }
 
     .hero-main-left-container {
@@ -779,6 +1062,47 @@ hr {
     .property-deals-btn {
         font-size: 1rem;
         padding: 15px 35px;
+    }
+
+    /* Reviews Section */
+    .review-2, .review-3 {
+        display: none;
+    }
+
+    .question-2, .question-3 {
+        display: none;
+    }
+
+    .question-showcase {
+        width: 100%;
+    }
+    .freq-questions {
+        width: 100%;
+    }
+
+    .question {
+        width: 100%;
+    }
+
+    /* CTA Section */
+
+    .section-explore {
+        display: block;
+    }
+
+    .explore-title-second {
+        display: block;
+    }
+
+    /* Footer Links */
+    .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto; 
+    }
+    
+    .footer-link {
+        border-bottom: 1px solid var(--border);
     }
 
 }
